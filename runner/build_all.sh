@@ -6,5 +6,3 @@ for d in */ ; do
       docker build -t "bazooka/runner-java:${d%?}" .
     popd
 done
-
-docker tag -f bazooka/runner-java:oraclejdk8 bazooka/runner-java:latest
